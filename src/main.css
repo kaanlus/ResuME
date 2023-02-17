@@ -1,0 +1,72 @@
+:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+    --red: #FF0000
+}
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    border-style: solid;
+    border-color: var(--fontColor);
+}
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+ul {
+    font-family: monospace;
+    font-style: italic;
+}
+#mission p {
+    border-style: solid;
+    border-color: var(--fontColor);
+    text-align: center;
+    font-size: x-large;
+}
+#f p {
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+}
+#missionDesc p {
+    text-align: center;
+    font-size: small;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-color: var(--fontColor);
+    border-style: solid;
+}
+
+.list {
+    list-style: square;
+}
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+.btn {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn {
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
