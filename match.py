@@ -5,6 +5,7 @@
 
 # Keep getting smaller and more specific
 
+
 majors = {
     "Computer Science": {
         "Software Engineering":,
@@ -37,7 +38,10 @@ majors = {
 
     },
     "Electrical Engineering": {
-        
+        "Electronics":,
+        "Computer":,
+        "Robotics":,
+
     }
 
 
@@ -47,10 +51,10 @@ majors = {
 
 # Make some example functions that take in familiar keywords for different 
 
-# 
+def match(major):
+    key = major.lower()
+    if key not in majors:
+        majors[key] = ""
 
-# 
+        
 
-# 
-
-# 
