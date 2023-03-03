@@ -70,3 +70,6 @@ footer {
     color: var(--btnFontColor);
     background-color: var(--btnBg);
 }
+#resume {
+    height: 200px;
+}
