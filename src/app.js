@@ -30,6 +30,46 @@ userDataForm.addEventListener("submit", (e) => {
             "User: " + firstName.value + " " + lastName.value + "\n" +
             "Major: " + major.value + "\n" +
             "Resume Text: \n" +  resume.value);
+        firstName.value = "";
+        lastName.value = "";
+        major.value = "";
+        resume.value = "";
+    }
+
+    // const fs = require('fs');
+    // let filename = firstName.value + "_" + lastName.value + "_" + major.value + ".txt";
+    // fs.writeFile(filename, resume.value, (err) => {
+    //     if (err) throw err;
+    //     else {
+    //         console.log("File successfully saved");
+    //     }
+    // });
+    
+});
+
+let contactForm = document.getElementById("contactSheet");
+userDataForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let concern = document.getElementById("cocern");
+
+    if (name.value == "" || email.value == "" || concern.value == "") {
+        alert("MISSING REQUIRED FIELDS");
+    }
+    else if (concern.value.includes("@") != true) {
+        alert("INVALID EMAIL")
+    }
+    else {
+        alert("This form has been successfully submitted");
+        console.log(
+            "Name: " + name.value + "\n" +
+            "Email: " + major.value + "\n" +
+            "Concern: \n" +  concern.value);
+        name.value = "";
+        email.vakue = "";
+        concern.value = "";
     }
 
     // const fs = require('fs');
@@ -42,8 +82,5 @@ userDataForm.addEventListener("submit", (e) => {
     // });
     
 
-    firstName.value = "";
-    lastName.value = "";
-    major.value = "";
-    resume.value = "";
+    
 });
