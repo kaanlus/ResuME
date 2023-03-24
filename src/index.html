@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resuME</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="light-theme">
+    <h1>Resume Matcher</h1>
+    <nav id="navBar">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">Our Mission</a>
+        <a href="./currentStatus.html">Current Features</a>
+        <a href="./whatsNext.html">Upcoming Features</a>
+        <a href="./contact.html">Contact</a> 
+    </nav>
+    <div id="centeredP">
+        <p>
+            This page will soon be usable to copy and paste in your resume into a text box, which will eventually turn into a file upload.
+            After that is up and running, the next step will be to make it so that the keywords get correctly pulled
+            in order for searches to be generated. After that, the final stage for the main functionallity
+            will be to develop actual searches with those keywords.
+        </p>
+    </div>
+    <div>
+        <p>
+            Complete the form below to help us develop our algorithm and collect more user data to improve results for everyone!
+        </p>
+        <form id="userInfo">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="field" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="field" name="lname"><br>
+            <label for="major">Major:</label><br>
+            <input type="text" id="field" name="major"><br>
+            <label for="resume">Copy and Paste Your Resume Below:</label><br>
+            <input type="text" id="resume" name="resume" size="100"><br>
+            <input type="submit" value="Submit"><br>
+        </form>
+    </div>
+</body>
+<footer>
+    <div id="f">
+        <p>By Anthony McGrann, Kaan Lus, and Ben Smith-Foley</p>
+    </div>  
+    <div>
+        <button class="btn">Dark</button>
+    </div>
+    <script src="app.js"> </script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</footer>
+</html>

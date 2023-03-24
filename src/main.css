@@ -1,0 +1,99 @@
+:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+    --darkred: #5f0707;
+    --red: #FF0000;
+    --gray: #938f8f;
+}
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    border-style: solid;
+    border-color: var(--fontColor);
+    background-color: var(--headerFooter);
+}
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+ul {
+    font-family: monospace;
+    font-style: italic;
+}
+#mission p {
+    border-style: solid;
+    border-color: var(--fontColor);
+    text-align: center;
+    font-size: x-large;
+}
+#f p {
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+}
+#centeredP p {
+    text-align: center;
+    font-size: small;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-color: var(--fontColor);
+    border-style: solid;
+    background-color: var(--headerFooter);
+}
+
+.list {
+    list-style: square;
+}
+.light-theme {
+    --bg: var(--darkred);
+    --fontColor: var(--white);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+    --headerFooter: var(--red);
+}
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+.btn {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn {
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+#resume {
+    height: 200px;
+    background-color: var(--gray);
+    color: var(--fontColor);
+}
+#concern {
+    height: 200px;
+    background-color: var(--gray);
+    color: var(--fontColor);
+}
+#field {
+    background-color: var(--gray);
+    color: var(--fontColor);
+}
+
+#navBar {
+    color: var(--fontColor) !important; 
+    background-color: var(--headerFooter);
+    border-color: var(--fontColor);
+    border-style: solid;
+    text-align: center;
+}
