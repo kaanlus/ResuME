@@ -2,13 +2,16 @@
     --green: #00FF00;
     --white: #FFFFFF;
     --black: #000000;
-    --red: #FF0000
+    --darkred: #5f0707;
+    --red: #FF0000;
+    --gray: #938f8f;
 }
 h1 {
     text-align: center;
     font-size: xx-large;
     border-style: solid;
     border-color: var(--fontColor);
+    background-color: var(--headerFooter);
 }
 
 body {
@@ -43,20 +46,22 @@ footer {
     width: 100%;
     border-color: var(--fontColor);
     border-style: solid;
+    background-color: var(--headerFooter);
 }
 
 .list {
     list-style: square;
 }
 .light-theme {
-    --bg: var(--white);
-    --fontColor: var(--black);
+    --bg: var(--darkred);
+    --fontColor: var(--white);
     --btnBg: var(--black);
     --btnFontColor: var(--white);
+    --headerFooter: var(--red);
 }
 .dark-theme {
     --bg: var(--black);
-    --fontColor: var(--white);
+    --fontColor: var(--green);
     --btnBg: var(--white);
     --btnFontColor: var(--black);
 }
@@ -72,7 +77,23 @@ footer {
 }
 #resume {
     height: 200px;
+    background-color: var(--gray);
+    color: var(--fontColor);
 }
 #concern {
     height: 200px;
+    background-color: var(--gray);
+    color: var(--fontColor);
+}
+#field {
+    background-color: var(--gray);
+    color: var(--fontColor);
+}
+
+#navBar {
+    color: var(--fontColor) !important; 
+    background-color: var(--headerFooter);
+    border-color: var(--fontColor);
+    border-style: solid;
+    text-align: center;
 }

@@ -48,7 +48,7 @@ userDataForm.addEventListener("submit", (e) => {
 });
 
 let contactForm = document.getElementById("contactSheet");
-userDataForm.addEventListener("submit", (e) => {
+contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
     let name = document.getElementById("name");
