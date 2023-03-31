@@ -10,44 +10,46 @@ from openpyxl import Workbook
 
 majors = {
     "Computer Science": {
-        "Software Engineering":,
-        "Cybersecurity":,
-        "Data Science":,
+        "Software Engineering",
+        "Cybersecurity",
+        "Data Science"
     },
     "Mechanical Engineering": {
-        "Design":,
-        "Manufacturing":,
-        "Mechanics":,
-        "Thermodynamics":,
-        "Materials":
+        "Design",
+        "Manufacturing",
+        "Mechanics",
+        "Thermodynamics",
+        "Materials"
     },
     "Chemical Engineering": {
-        "Environmental":,
-        "Design":,
-        "Safety":,
-        "Plant":,
-        "Waste":
+        "Environmental",
+        "Design",
+        "Safety",
+        "Plant",
+        "Waste"
     },
     "Aerospace Engineering": {
-        "Aircraft":,
-        "Aerodynamics":,
-        "Thermodynamics":,
-        "Materials":,
-        "Mechanics": {
-            "Celestial":,
-            "Flight":,
-        }
+        "Aircraft",
+        "Aerodynamics",
+        "Thermodynamics",
+        "Materials",
+        "Mechanics"
 
     },
     "Electrical Engineering": {
-        "Electronics":,
-        "Computer":,
-        "Robotics":,
+        "Electronics",
+        "Computer",
+        "Robotics"
 
     }
 
 
 }
+
+stop_words = []
+stop = open("stop_words.txt")
+for i in stop:
+    stop_words.append(i)
     
 
 
@@ -74,27 +76,26 @@ def match(major):
 
 def spec(major):
     match_count = 0
-    matches = dict()
+    matches = []
     for val in majors[major]:
         #if json data == val, add to list of potential matches
         title = #title of job
         link = #link to job
-        matches[title] = link
+        matches[match_count] = (title, link)
 
 
 
 
 #read from json file
-f = open("resume.json")
-data = json.load(f)
+f = open("resume.txt")
+data = f.readlines()
 
-i = data["students"]
-print(i["major"])
-print(i["role"])
+name = data[0] 
+major = data[1]
 
-name = str(data["name"])
+
 #Check if major is in our dict
-matches = match(i["major"])
+matches = match(major)
 #If in dict, look for key words, else we add new key words to our new dictionary that this will create
 
 #Make empty array of jobs
@@ -103,14 +104,16 @@ jobs = []
 if(matches):
     #start searching for key words
     for x in data:
-        if (x in majors[i["major"]]):
+        if (x in majors[major]):
             #add to an array the jobs saved under the key
-            for job in majors[i["major"]]:
+            for job in majors[major]:
                 jobs.append(job)
 
+else:
+    majors[major] = " "
 #Make file 
 
-job_file = make_workbook(name + "_jobs.xlsx", jobs)
+job_file = make_workbook(name + "_jobs.csv", jobs)
 
 
         
