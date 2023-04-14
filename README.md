@@ -1,5 +1,13 @@
 # ResuME
-ResuME
+ResuME Pitch
+
+  Introducing the ultimate job search solution - our website! Looking for a job can be a daunting and time-consuming task, but we're here to make it easier for you. Our website is designed to simplify the job search process, so you can find the right job for you with just a few clicks.
+
+  Gone are the days of sifting through endless job postings on LinkedIn and other websites. With our interactive, easy-to-use platform, you can simply drag and drop your resume and find job listings that are actually relevant to you. Our goal is to make the job search process as stress-free as possible, so you can focus on finding your dream job.
+
+  What sets us apart from other job search websites is our personalized approach. By the end of this semester, we aim to have our project to the point where users can enter their resume and see personalized results in real time. This means that you'll no longer have to spend hours searching for jobs that may not even be a good fit for you. Instead, our website will do the heavy lifting for you, presenting you with job opportunities that match your skills and experience.
+
+  So, if you're tired of endlessly scrolling through job postings with no luck, give our website a try. We're confident that our personalized approach and easy-to-use platform will help you find the job you've been searching for.
 
 Description
 Drag and drop resumes

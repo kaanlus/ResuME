@@ -75,11 +75,7 @@ footer {
     color: var(--btnFontColor);
     background-color: var(--btnBg);
 }
-#resume {
-    height: 200px;
-    background-color: var(--gray);
-    color: var(--fontColor);
-}
+
 #concern {
     height: 200px;
     background-color: var(--gray);

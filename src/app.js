@@ -15,25 +15,25 @@ let userDataForm = document.getElementById("userInfo");
 userDataForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    let firstName = document.getElementById("fname");
-    let lastName = document.getElementById("lname");
-    let major = document.getElementById("major");
-    let resume = document.getElementById("resume");
-    let jsonData = document.getElementById("jsontext");
+    let firstName = document.getElementsByName("fname");
+    let lastName = document.getElementsByName("lname");
+    let major = document.getElementsByName("major");
+    let resume = document.getElementById("resume").files[0];
 
-    if (firstName.value == "" || lastName.value == "" || major.value == "" || resume.value == "") {
-        alert("MISSING REQUIRED FIELDS");
-    }
-    else {
+    // if (firstName.value == undefined || lastName.value == undefined || major.value == undefined) {
+    //     alert("MISSING REQUIRED FIELDS");
+    // }
+    //else 
+    {
         alert("This form has been successfully submitted");
         console.log(
             "User: " + firstName.value + " " + lastName.value + "\n" +
-            "Major: " + major.value + "\n" +
-            "Resume Text: \n" +  resume.value);
-        firstName.value = "";
-        lastName.value = "";
-        major.value = "";
-        resume.value = "";
+            "Major: " + major.value + "\n" + resume);
+        // firstName.value = "";
+        // lastName.value = "";
+        // major.value = "";
+        // resume = null;
+        window.location.reload();
     }
 
     // const fs = require('fs');
@@ -47,40 +47,41 @@ userDataForm.addEventListener("submit", (e) => {
     
 });
 
-let contactForm = document.getElementById("contactSheet");
-contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
+// let contactForm = document.getElementById("contactSheet");
+// contactForm.addEventListener("submit", (e) => {
+//     e.preventDefault();
 
-    let name = document.getElementById("name");
-    let email = document.getElementById("email");
-    let concern = document.getElementById("cocern");
+//     let name = document.getElementById("name");
+//     let email = document.getElementById("email");
+//     let concern = document.getElementById("cocern");
 
-    if (name.value == "" || email.value == "" || concern.value == "") {
-        alert("MISSING REQUIRED FIELDS");
-    }
-    else if (concern.value.includes("@") != true) {
-        alert("INVALID EMAIL")
-    }
-    else {
-        alert("This form has been successfully submitted");
-        console.log(
-            "Name: " + name.value + "\n" +
-            "Email: " + major.value + "\n" +
-            "Concern: \n" +  concern.value);
-        name.value = "";
-        email.vakue = "";
-        concern.value = "";
-    }
 
-    // const fs = require('fs');
-    // let filename = firstName.value + "_" + lastName.value + "_" + major.value + ".txt";
-    // fs.writeFile(filename, resume.value, (err) => {
-    //     if (err) throw err;
-    //     else {
-    //         console.log("File successfully saved");
-    //     }
-    // });
+//     if (name.value == "" || email.value == "" || concern.value == "") {
+//         alert("MISSING REQUIRED FIELDS");
+//     }
+//     else if (concern.value.includes("@") != true) {
+//         alert("INVALID EMAIL")
+//     }
+//     else {
+//         alert("This form has been successfully submitted");
+//         console.log(
+//             "Name: " + name.value + "\n" +
+//             "Email: " + major.value + "\n" +
+//             "Concern: \n" +  concern.value);
+//         name.value = "";
+//         email.vakue = "";
+//         concern.value = "";
+//     }
+
+//     // const fs = require('fs');
+//     // let filename = firstName.value + "_" + lastName.value + "_" + major.value + ".txt";
+//     // fs.writeFile(filename, resume.value, (err) => {
+//     //     if (err) throw err;
+//     //     else {
+//     //         console.log("File successfully saved");
+//     //     }
+//     // });
     
 
     
-});
+// });
