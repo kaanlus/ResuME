@@ -1,7 +1,11 @@
 import requests
 from bs4 import BeautifulSoup
 
-def get_job_links(keyword):
+def get_job_links(keywords):
+    keyword = ""
+    for word in keywords:
+        keyword += word + " "
+    keyword += "job"
     url = f'https://www.indeed.com/jobs?q={keyword}'
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
