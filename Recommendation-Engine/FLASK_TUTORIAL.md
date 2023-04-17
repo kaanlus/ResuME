@@ -43,6 +43,7 @@ You can use markdown to format text in various ways, such as **bold**, *italic*,
 ```python
 def hello():
     return "Hello, Flask Markdown!"
+    
 ```
 
 In this example, we create a Flask web application that renders a markdown-formatted text as the homepage. The `@app.route('/')` decorator defines a route for the homepage, and the function `home()` returns a markdown-formatted text as the response.
